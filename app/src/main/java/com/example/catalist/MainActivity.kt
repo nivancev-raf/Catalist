@@ -12,6 +12,7 @@ import androidx.compose.runtime.Composable
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.tooling.preview.Preview
 import com.example.catalist.repository.SampleBreeds
+import com.example.catalist.ui.composables.AppNavigation
 import com.example.catalist.ui.composables.BreedListScreen
 import com.example.catalist.ui.theme.CatalistTheme
 
@@ -22,10 +23,11 @@ class MainActivity : ComponentActivity() {
         setContent {
             CatalistTheme {
                 // Ovo može biti Breed List Screen umesto Greeting komponente
-                BreedListScreen(
-                    breeds = SampleBreeds, // Pretpostavka da imate SampleBreeds listu dostupnu
-                    onBreedClick = { /* Handle breed click */ }
-                )
+//                BreedListScreen(
+//                    breeds = SampleBreeds, // Pretpostavka da imate SampleBreeds listu dostupnu
+//                    onBreedClick = { /* Handle breed click */ }
+//                )
+                AppNavigation()
 
             }
         }

@@ -1,7 +1,7 @@
 plugins {
     alias(libs.plugins.androidApplication)
     alias(libs.plugins.jetbrainsKotlinAndroid)
-//    id("androidx.navigation.safeargs.kotlin")
+    id("androidx.navigation.safeargs.kotlin")
 
 }
 
@@ -70,8 +70,8 @@ dependencies {
     debugImplementation(libs.androidx.ui.test.manifest)
 
     // Jetpack Navigation
-//    val nav_version = "2.7.7"
-//    implementation("androidx.navigation:navigation-fragment-ktx:$nav_version")
-//    implementation("androidx.navigation:navigation-ui-ktx:$nav_version")
-//    implementation("androidx.navigation:navigation-compose:$nav_version")
+    val nav_version = "2.7.7"
+    implementation("androidx.navigation:navigation-fragment-ktx:$nav_version")
+    implementation("androidx.navigation:navigation-ui-ktx:$nav_version")
+    implementation("androidx.navigation:navigation-compose:$nav_version")
 }
